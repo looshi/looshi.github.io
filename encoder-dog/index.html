@@ -2,20 +2,61 @@
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" type="text/css" href="css/normalize.css" />
-  <link rel="stylesheet" type="text/css" href="css/index.scss" />
-
   <script src="./enable-threads.js"></script>
-  <title>In Dog We Trust</title>
+  <title>Mp3 encoder online free. Edit tags and save album art from image file!</title>
 </head>
+<style>
+  body {
+    background-color: #1c2023
+  }
+
+  footer {
+    background: linear-gradient(180deg, rgba(31, 36, 39, 1) 0%, rgba(28, 32, 35, 1) 100%);
+    border-top: 1px solid #948b7f;
+    font-size: 12px;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding-top: 16px;
+  }
+
+  footer p {
+    max-width: 480px;
+    padding: 0 24px;
+  }
+
+  footer h2 {
+    padding: 0 24px;
+  }
+
+</style>
 
 <body>
   <div id="root"></div>
-
-
   <script src="./bundle.js"></script>
+  <footer>
+    <h2>About</h2>
+    <p>Free online mp3 encoder. Edit tags and save album art from image file!</p>
+    <p>This page uses the ffmpeg Web Assembly library
+      which allows ffmpeg to run in the
+      browser. This program runs entirely on your computer within the browser, no data is sent to a server, no data is
+      stored, no data is shared. Free to use!</p>
+    <ul>
+      <li>ffmpeg: <a href="https://ffmpeg.org">https://ffmpeg.org</a></li>
+      <li>wasm: <a href="https://webassembly.org">https://webassembly.org</a></li>
+      <li>ffmpegwasm: <a href="https://ffmpegwasm.netlify.app/">https://ffmpegwasm.netlify.app</a></li>
+      <li>source code for this page: <a
+          href="https://github.com/looshi/encoder-dog">https://github.com/looshi/encoder-dog</a></li>
+    </ul>
+    <p>Mp3 files are converted to constant bitrate of 320k.</p>
+    <p>To view ffmpeg output: right click the browser screen and select "inspect" and the click on the "console" tab.
+    </p>
+    <p>Tested in Chrome on linux and windows. Other browsers may not work.</p>
+    <p>Convert music files ( wav , aiff, flac, etc. ) to mp3 and add tags right here in the browser!</p>
+    <p></p><a href="https://looshi.github.io/"><img alt="drawing of a dog" style="height: 100"
+        src="./profile-photo-dog-sm-beige.png" /></a>
+    </p>
+  </footer>
 </body>
 
 </html>
