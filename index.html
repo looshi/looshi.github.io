@@ -1,22 +1,235 @@
+<!DOCTYPE html>
 <html>
 
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <script src="./enable-threads.js"></script>
+  <title>Looshi</title>
+</head>
+<style>
+  body {
+    background-color: white;
+    color: #1c2023;
+    font-family: "Poppins", arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  header {
+    position: relative;
+    background: white;
+    color: #1c2023;
+    margin: 0;
+    padding: 24px 24px 0;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo img {
+    height: 100px;
+  }
+
+  .logo h1 {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 120px;
+    top: 74px;
+  }
+
+  p {
+    margin: 12px 0;
+    padding: 12px 0;
+  }
+
+  a,
+  a:visited {
+    color: inherit;
+  }
+
+  a:hover,
+  a:active {
+    color: green;
+  }
+
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+
+    font-family: Helvetica, sans-serif;
+    margin: 12px 0;
+    padding: 12px 0;
+  }
+
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 24px;
+  }
+
+  .card {
+    background: aliceblue;
+    border: 1px solid #357db4;
+    border-radius: 3px;
+    position: relative;
+    width: 100%;
+    margin: 0 auto 48px;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .card>img {
+    object-fit: cover;
+    height: 200px;
+    width: 100%;
+  }
+
+  .card-description {
+    padding: 0 24px 12px;
+  }
+
+  .card a {
+    padding: 4px 0;
+  }
+
+  footer {
+    padding: 0 24px 24px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+
+  footer a,
+  footer p,
+  footer picture,
+  footer div {
+    margin-top: 12px;
+    display: block;
+  }
+
+  .icon-link {
+    display: flex;
+    align-items: center;
+  }
+
+  footer .icon-link {
+    display: inline-flex;
+  }
+
+  .icon-link img {
+    height: 20px;
+    margin-right: 4px;
+  }
+
+</style>
+
 <body>
-  <img src="./images/profile-photo-dog-sm.png" />
+  <header>
+    <div class="logo">
+      <a href="https://looshi.github.io/"><img alt="drawing of a dog" src="images/profile-photo-dog-sm.png" /></a>
+      <h1>Looshi</h1>
+    </div>
+    <p>Hello! My name is Looshi, I am a web developer based in the U.S. I have worked with a vast array of technologies
+      over the years. Recently I enjoy attempting to finally finish some of my open source ideas, I hope you find some
+      of them useful or perhaps they spark a better idea you may have by looking at them.</p>
+  </header>
 
-  <a href="https://simpleanalytics.com/?utm_source=looshi.github.io&utm_content=badge" referrerpolicy="origin"
-    target="_blank">
-    <picture>
-      <source srcset="https://simpleanalyticsbadges.com/looshi.github.io?mode=dark"
-        media="(prefers-color-scheme: dark)" /><img
-        src="  https://simpleanalyticsbadges.com/simpleanalytics.com?logo=orangered&text=rgba(255,69,0,.8)&background=151b1c"
-        loading="lazy" referrerpolicy="no-referrer" crossorigin="anonymous" />
-    </picture>
-  </a>
+  <main>
+    <div class="card">
+      <img src="https://github.com/looshi/looshis-local-logger/raw/main/examples/example.png/"
+        alt="Terminal next to browser devtools" />
+      <div class="card-description">
+        <h2>Looshi's Local Logger</h2>
+        <p>LLL is a command line program which allows you to view terminal output in a browser's devtools.</p>
+        <a class="icon-link" href="https://www.npmjs.com/package/looshis-local-logger"><img src="images/npm-logo.svg"
+            alt="npm logo" />npmjs.com/package/looshis-local-logger</a>
+      </div>
+    </div>
 
-  <!-- 100% privacy friendly analytics -->
-  <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
-  <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt=""
-      referrerpolicy="no-referrer-when-downgrade" /></noscript>
+
+    <div class="card">
+      <img src="https://raw.githubusercontent.com/looshi/encoder-dog/master/encoder-dog-screenshot.png"
+        alt="User Interface with ability to add mp3 tags and convert mp3" />
+      <div class="card-description">
+        <h2>Encoder Dog</h2>
+        <p>Convert audio files to mp3 directly in the browser. Add mp3 tags and album art.
+        </p>
+        <a class="icon-link" href="https://looshi.github.io/encoder-dog/"><img src="images/profile-photo-dog-sm.png"
+            alt="Looshi logo" />Encoder Dog</a>
+        <a class="icon-link" href="https://github.com/looshi/encoder-dog"><img src="images/github-logo.svg"
+            alt="github logo" />View on
+          Github</a>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <img src="https://github.com/looshi/wavetable-synth-2/raw/main/images/wavetable-screenshot.png"
+        alt="User Interface with ability to add mp3 tags and convert mp3" />
+      <div class="card-description">
+        <h2>Wavetable Synth</h2>
+        <p>A web audio synth using wavetables.</p>
+        <a class="icon-link" href="https://looshi.github.io/wavetable/"><img src="images/profile-photo-dog-sm.png"
+            alt="Looshi logo" />Play The Synth</a>
+        <a class="icon-link" href="https://github.com/looshi/wavetable-synth-2"><img src="images/github-logo.svg"
+            alt="github logo" />View on
+          Github</a>
+
+      </div>
+    </div>
+
+    <div class="card">
+      <img
+        src="https://camo.githubusercontent.com/e4f18c9d916a2128c4f13448f0ed83b2320003f726a790e58e0650f318ca3178/68747470733a2f2f6c6f6f7368692e6769746875622e696f2f736e616b652f736e616b652e706e67"
+        alt="User Interface with ability to add mp3 tags and convert mp3" />
+      <div class="card-description">
+        <h2>Snake</h2>
+        <p>Everybody loves snake.
+        </p>
+
+        <a class="icon-link" href="https://looshi.github.io/snake/"><img src="images/profile-photo-dog-sm.png"
+            alt="Looshi logo" />Play Snake</a>
+        <a class="icon-link" href="https://github.com/looshi/snake-table-cells"><img src="images/github-logo.svg"
+            alt="github logo" />View on
+          Github</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <a class="icon-link" href="https://github.com/looshi"><img src="images/github-logo.svg" />github.com/looshi</a>
+    <div>Contact: hellolooshi [at] pm.me</div>
+    <a href="https://simpleanalytics.com/?utm_source=looshi.github.io&utm_content=badge" referrerpolicy="origin"
+      target="_blank">
+      <picture>
+        <source srcset="https://simpleanalyticsbadges.com/looshi.github.io?mode=dark"
+          media="(prefers-color-scheme: dark)" /><img
+          src="https://simpleanalyticsbadges.com/simpleanalytics.com?logo=a19b94&text=1c2023&background=lightgray"
+          loading="lazy" referrerpolicy="no-referrer" crossorigin="anonymous" />
+      </picture>
+    </a>
+
+    <!-- 100% privacy friendly analytics -->
+    <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+    <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt=""
+        referrerpolicy="no-referrer-when-downgrade" /></noscript>
+  </footer>
 </body>
 
 </html>
