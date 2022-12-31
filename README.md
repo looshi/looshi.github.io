@@ -1,2 +1,1 @@
-# looshi.github.io
-Looshi's Website
+Visit Site Here: https://looshi.github.io/
