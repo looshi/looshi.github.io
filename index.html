@@ -9,7 +9,7 @@
 </head>
 <style>
   body {
-    background-color: white;
+    background-color: #eee;
     color: #1c2023;
     font-family: "Poppins", arial, sans-serif;
     margin: 0;
@@ -23,7 +23,7 @@
     background: white;
     color: #1c2023;
     margin: 0;
-    padding: 24px 24px 0;
+    padding: 24px 32px 0;
     max-width: 800px;
     margin: 0 auto;
   }
@@ -48,8 +48,9 @@
   }
 
   p {
-    margin: 12px 0;
+    margin: 0;
     padding: 12px 0;
+
   }
 
   a,
@@ -59,7 +60,7 @@
 
   a:hover,
   a:active {
-    color: green;
+    color: #3a1bd9;
   }
 
 
@@ -71,7 +72,7 @@
   h6 {
 
     font-family: Helvetica, sans-serif;
-    margin: 12px 0;
+    margin: 0;
     padding: 12px 0;
   }
 
@@ -79,18 +80,26 @@
     max-width: 800px;
     margin: 0 auto;
     max-width: 800px;
-    padding: 24px;
+    padding: 32px;
+    background: white;
+  }
+
+  .card:last-child {
+    margin: 0 auto;
   }
 
   .card {
-    background: aliceblue;
-    border: 1px solid #357db4;
+    background: #eee;
+    border: 1px solid #ededed;
     border-radius: 3px;
     position: relative;
     width: 100%;
-    margin: 0 auto 48px;
+    margin: 0 auto 64px;
     box-sizing: border-box;
-    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .card p {
+    max-width: 500px;
   }
 
   .card>img {
@@ -145,9 +154,11 @@
       <a href="https://looshi.github.io/"><img alt="drawing of a dog" src="images/profile-photo-dog-sm.png" /></a>
       <h1>Looshi</h1>
     </div>
-    <p>Hello! My name is Looshi, I am a web developer based in the U.S. I have worked with a vast array of technologies
-      over the years. Recently I enjoy attempting to finally finish some of my open source ideas, I hope you find some
-      of them useful or perhaps they spark a better idea you may have by looking at them.</p>
+    <h2>About Me</h2>
+    <p>Hello! I'm a U.S. based developer, recently focused on microservice backend
+      development. Prior, I was a fullstack and frontend dev for many years. I have worked for major corporations and
+      small startups as well. Below are a few of my repositories which I hope are useful or fun! Contact me: hellolooshi
+      [at] pm.me</p>
   </header>
 
   <main>
@@ -159,6 +170,9 @@
         <p>LLL is a command line program which allows you to view terminal output in a browser's devtools.</p>
         <a class="icon-link" href="https://www.npmjs.com/package/looshis-local-logger"><img src="images/npm-logo.svg"
             alt="npm logo" />npmjs.com/package/looshis-local-logger</a>
+        <a class="icon-link" href="https://github.com/looshi/looshis-local-logger"><img src="images/github-logo.svg"
+            alt="github logo" />View on
+          Github</a>
       </div>
     </div>
 
@@ -176,6 +190,12 @@
             alt="github logo" />View on
           Github</a>
       </div>
+      <details closed>
+        <summary>
+          Read More
+        </summary>
+        more info
+      </details>
     </div>
 
 
